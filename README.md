@@ -23,21 +23,21 @@ This project is a Node.js-based backend system using **Express** and **MongoDB**
 └── README.md
 ```
 
-🛠️ Tech Stack Used
+## 🛠️ Tech Stack Used
 
-Node.js: For server-side scripting and API creation.
+**Node.js:** For server-side scripting and API creation.
 
-Express: For building RESTful APIs and routing.
+**Express:** For building RESTful APIs and routing.
 
-MongoDB: As a NoSQL database to store and manage person and mobile data.
+**MongoDB:** As a NoSQL database to store and manage person and mobile data.
 
-Mongoose: For MongoDB object modeling and schema validation.
+**Mongoose:** For MongoDB object modeling and schema validation.
 
-dotenv: For environment variable management.
+**dotenv:** For environment variable management.
 
-```
 
-## 📌 Features
+
+##  📌 Features
 
 - MongoDB integration using **Mongoose**.
 - RESTful APIs for **Person** and **Mobile** collections.
@@ -48,7 +48,10 @@ dotenv: For environment variable management.
     - **Delete**: Remove records.
 - Environment configuration using **dotenv**.
 
+
 ## 🛠️ Setup Instructions
+
+
 
 ### Prerequisites
 - **Node.js** (v18.x or above)
