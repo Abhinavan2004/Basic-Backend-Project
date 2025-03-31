@@ -20,6 +20,14 @@ const personSchema = new mongoose.Schema({       // isse tu ek new Schema bana r
     salary:{
         type:Number,
         required:true
+    },
+    username: {
+        type:String,
+        required:true
+    },
+    password:{
+        type:String,
+        required:String
     }
 })
 

@@ -11,6 +11,22 @@ const person = require('./Models/person.js');
 const Mobile = require("./Models/Mobiles.js");
 const { Mongoose } = require('mongoose');
 
+
+
+const middleware = (req, res, next) => {
+    console.log(`[${new Date().toLocaleString()}] Request made to: ${req.originalUrl}`);
+    next();
+};
+
+
+// app.get("/" , middleware , function(req,res){               // middleware func ko run krne ke liye thujhe ya toh aise harr                                                            
+// res.send("HEllo this is home page");                            route mein middleware likhna pdega toh run middleware function
+// })
+
+// OR ---> direct bass likh de app.use(middleware);   then woh saare route mein work krne lgega
+
+app.use(middleware);
+
 app.get("/" , function(req,res){
 res.send("HEllo this is home page");
 })
