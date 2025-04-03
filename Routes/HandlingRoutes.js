@@ -4,6 +4,7 @@ const person = require("./../Models/person.js");
 const mongoose = require("mongoose");
 
 
+
 expressRouter.post("/" , async function(req , res){       // creating a post request for the creation of endpoint and putting data in the collection 
     const data = req.body ;                     // ye woh tera data jisme ayega http requests ke through oh bodyparser se convert hone ke baad ka 
      
@@ -33,6 +34,7 @@ res.status(500).json();
 
 
 expressRouter.get("/" , async(req,res) =>{
+    // console.log(username , password);
     try{
         const to_fetch_data = await person.find();
         console.log("Person Data fetched successfully");
@@ -43,6 +45,7 @@ expressRouter.get("/" , async(req,res) =>{
         res.status(500).json({error: 'Internel error'});
         }
 });
+
 
 
 expressRouter.put("/:id" , async(req,res) =>{

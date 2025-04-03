@@ -27,7 +27,7 @@ const personSchema = new mongoose.Schema({       // isse tu ek new Schema bana r
     },
     password:{
         type:String,
-        required:String
+        required:true
     }
 })
 
